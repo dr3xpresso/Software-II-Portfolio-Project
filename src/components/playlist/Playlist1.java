@@ -1,3 +1,4 @@
+package components.playlist;
 
 import components.queue.Queue;
 import components.queue.Queue1L;
@@ -6,8 +7,6 @@ import components.queue.Queue1L;
  * {@code Playlist} represented as a {@link components.queue.Queue} with
  * implementations of primary methods.
  *
- * @param <Song>
- *            type of {@code Playlist} entries
  * @correspondence this = entries($this.rep)
  * @convention <this.rep> is not null
  */
@@ -44,7 +43,8 @@ public class Playlist1 extends PlaylistSecondary {
      * Standard methods -------------------------------------------------------
      */
 
-    public final Playlist<Song> newInstance() {
+    @Override
+    public final Playlist newInstance() {
         try {
             return this.getClass().getConstructor().newInstance();
         } catch (ReflectiveOperationException e) {
@@ -53,15 +53,17 @@ public class Playlist1 extends PlaylistSecondary {
         }
     }
 
+    @Override
     public final void clear() {
         this.createNewRep();
     }
 
-    public final Playlist<Song> transferFrom(Playlist<Song> source) {
+    @Override
+    public final void transferFrom(Playlist source) {
         assert source != null : "Violation: source is not null";
         assert source != this : "Violation: source is not this";
 
-        Playlist1<Song> localSource = (Playlist1<Song>) source;
+        Playlist1 localSource = (Playlist1) source;
         this.rep = localSource.rep;
         localSource.createNewRep();
     }
@@ -70,12 +72,12 @@ public class Playlist1 extends PlaylistSecondary {
      * Kernel methods --------------------------------------------------------x
      */
     @Override
-    void addSong(Song song) {
+    public final void addSong(Song song) {
         this.rep.enqueue(song);
     }
 
     @Override
-    Song removeSong(Song song) {
+    public final Song removeSong(Song song) {
         assert this.hasSong(song) : "Violation: song is not in this!";
 
         Queue<Song> temp = this.rep.newInstance();
@@ -99,24 +101,30 @@ public class Playlist1 extends PlaylistSecondary {
     }
 
     @Override
-    int size() {
+    public final int size() {
         int length = this.rep.length();
 
         return length;
     }
 
     @Override
-    Song removeLastSong() {
+    public final Song removeLastSong() {
         assert this.rep.length() > 0 : "Violation of: |this| > 0";
 
-        this.rep.flip();
+        Queue<Song> temp = this.rep.newInstance();
+
+        while (this.rep.length() > 1) {
+            temp.enqueue(this.rep.dequeue());
+        }
         Song removed = this.rep.dequeue();
+
+        this.rep.transferFrom(temp);
 
         return removed;
     }
 
     @Override
-    boolean hasSong(Song song) {
+    public final boolean hasSong(Song song) {
         boolean songIn = false;
         Queue<Song> temp = this.rep.newInstance();
 

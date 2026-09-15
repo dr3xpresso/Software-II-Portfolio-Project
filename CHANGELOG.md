@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
+## 2025.12.10
+
+### Added
+
+- Designed test suite for Playlist component
+- Designed two different use cases for Playlist component
+
+### Updated
+
+- Fixed every secondary method so they would pass test cases.
+- Organized directories
 
 ## 2025.12.05
 
@@ -73,4 +84,3 @@ the following form: YYYY.0M.0D.
 - Added Song subclass to PlaylistKernel
 - Changed method headers in the interfaces to change from generic song type to song
 - Changed method headers in the playlist enhanced interface to treat Queue<Pair<S, A>> as this.
-.

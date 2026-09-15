@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Robert Ashley
+- **Dot Number**: ashley.184
+- **Due Date**: 12/10/25
 
 ## Assignment Overview
 
@@ -49,8 +49,6 @@ Many of these additional techniques are somewhat out of the scope of this
 course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -140,8 +138,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +303,30 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+The portfolio project made software development make a lot of sense.
+In the software sequence, I found myself frequently wondering why we were making
+the things in the projects. The only assignments I kind of understood were the
+ones where we created something that made an HTML output. With the portfolio project,
+I created something useful that other useful things can build on. That got me
+thinking that software development is more about making things to solve a
+problem or complete a real task.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+I really did not understand Git and GitHub at all before the project started.
+My first introduction to it was with the first project in software 2, and I
+didn't get the hang of it until I had to Google things out of desperation
+in order to do portfolio project correctly.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+I still don't enjoy it as much as I used to. I don't like Java as much as other
+languages I have used in the past, and that is influencing my opnion on
+software development as a whole right now. I think I might start to enjoy it
+again if I create some cool new things of my own.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +334,40 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+The biggest skill I picked up was working with GitHub. In terms of non
+software skills, I learned the importance of time management. Handling deadlines
+was not easy and I had to figure out how to pace the project.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- GitHub
+- Time Management
+- Collaboration
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I still love music and this project has not changed my opinion on it at all. I
+have not thought much before this project that I could pursue a CSE/CE job in
+the music industry so I am curious to see what opportunites lie there.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I think even though I learned the importance of time management, as well as a
+couple skills to help me manage my time, I still have a lot to work on and learn.
+I also need to get better at networking and finding help. I didn't really
+mention it before, but learning how to discuss programming projects with others
+is something I learned and is another thing I need to work on. I know a few
+upper classmen that have pretty good software jobs and I also know a few
+graduates in non-software CE fields. I feel like I could ask these people for
+advice and they would be pretty helpful.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -367,8 +386,8 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
-- Designed test suite for <!-- insert name of component here --> component
-- Designed two different use cases for <!-- insert name of component here --> component
+- Designed test suite for Playlist component
+- Designed two different use cases for Playlist component
 
 ### Updated
 
